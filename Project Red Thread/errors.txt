@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 345: style property right_paddding is not known.
+    right_paddding 25
+                  ^
+
+Ren'Py Version: Ren'Py 6.99.13.2919

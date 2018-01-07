@@ -1,0 +1,33 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00keymap.rpy", line 404, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 414, in <module>
+    renpy.take_screenshot((config.thumbnail_width, config.thumbnail_height))
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00keymap.rpy", line 404, in script
+    python hide:
+  File "D:\installers\Development\RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\installers\Development\RenPy\renpy-6.99.13-sdk\renpy\python.py", line 1764, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00keymap.rpy", line 414, in <module>
+    renpy.take_screenshot((config.thumbnail_width, config.thumbnail_height))
+  File "D:\installers\Development\RenPy\renpy-6.99.13-sdk\renpy\exports.py", line 1523, in take_screenshot
+    renpy.game.interface.take_screenshot(scale, background=background)
+  File "D:\installers\Development\RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2020, in take_screenshot
+    surf = renpy.display.scale.smoothscale(surf, scale)
+  File "D:\installers\Development\RenPy\renpy-6.99.13-sdk\renpy\display\scale.py", line 93, in real_smoothscale
+    dest = pgrender.surface_unscaled(size, src)
+  File "D:\installers\Development\RenPy\renpy-6.99.13-sdk\renpy\display\pgrender.py", line 116, in surface
+    surf = Surface((width + 4, height + 4), 0, sample)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+
+Windows-8-6.2.9200
+Ren'Py 6.99.13.2919
+ 

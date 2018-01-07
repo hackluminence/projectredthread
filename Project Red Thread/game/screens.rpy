@@ -301,19 +301,20 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("start") action Start()
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("history") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Options") action ShowMenu("preferences")
+        textbutton _("load") action ShowMenu("load")
 
         textbutton _("index") action ShowMenu("index")
+        
+        textbutton _("options") action ShowMenu("preferences")
+
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
